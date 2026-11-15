@@ -1,133 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Kalyo</title>
-<meta name="description" content="Politique de confidentialité de Kalyo, l'application de suivi nutritionnel." />
+<meta name="description" content="Privacy policy for the Kalyo nutrition tracking app.">
 <style>
-  :root {
-    --emerald: #059669;
-    --emerald-dark: #047857;
-    --mint: #ecfdf5;
-    --bg: #ffffff;
-    --text: #111827;
-    --muted: #4b5563;
-    --border: #e5e7eb;
-  }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    margin: 0;
-    line-height: 1.6;
-  }
-  .page { max-width: 720px; margin: 0 auto; padding: 48px 20px 96px; }
-  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
-  .logo {
-    width: 64px; height: 64px; border-radius: 14px;
-    background: var(--emerald);
-    display: grid; place-items: center;
-    color: white; font-size: 32px; font-weight: 700;
-  }
-  h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
-  .updated { color: var(--muted); margin-bottom: 40px; font-size: 14px; }
-  h2 {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    color: var(--emerald-dark);
-    border-bottom: 2px solid var(--mint);
-    padding-bottom: 6px;
-  }
-  p, li { color: var(--text); }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  .badge {
-    display: inline-block;
-    background: var(--mint);
-    color: var(--emerald-dark);
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: 12px;
-    margin-right: 8px;
-  }
-  .lang-switch {
-    display: inline-block;
-    margin-top: 32px;
-    padding: 10px 14px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--emerald-dark);
-    font-weight: 600;
-  }
-  footer { margin-top: 64px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 20px; }
+:root {
+  --emerald: #059669;
+  --emerald-dark: #047857;
+  --mint: #ecfdf5;
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --border: #e5e7eb;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 48px 20px 96px; }
+header { display: flex; align-items: center; gap: 16px; }
+h1 { font-size: 2rem; margin: 0 0 4px; }
+h2 {
+  font-size: 1.2rem;
+  margin: 40px 0 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+h3 { font-size: 1rem; margin: 24px 0 8px; color: var(--emerald-dark); }
+p { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--mint);
+  color: var(--emerald-dark);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+strong { font-weight: 600; }
+.subtitle { color: var(--muted); margin: 0 0 8px; }
+.version { color: var(--muted); font-size: 0.9rem; margin: 0 0 8px; }
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.langbar { margin: 12px 0 0; font-size: 0.9rem; }
+.langbar a { color: var(--emerald-dark); }
 </style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div class="logo">K</div>
-      <h1>Politique de confidentialité</h1>
-    </header>
-    <p class="updated">Application de suivi nutritionnel Kalyo — Dernière mise à jour : 9 septembre 2026</p>
-
-    <p>
-      <span class="badge">Aucun suivi</span>
-      <span class="badge">Aucun serveur</span>
-      <span class="badge">Vos données restent sur votre appareil</span>
-    </p>
-
-    <p>Kalyo (« l'Application ») est une application de suivi nutritionnel développée par un développeur indépendant. Cette page explique quelles données l'Application traite et comment.</p>
-
-    <h2>1. Données que nous ne collectons PAS</h2>
-    <p>Kalyo ne collecte, ne stocke sur un serveur, ni ne partage avec des tiers aucune donnée personnelle vous concernant. L'intégralité de votre journal alimentaire, de vos informations de profil, de vos entrées de poids et de votre historique d'activité est stockée exclusivement sur votre appareil via le stockage local (AsyncStorage). Aucune création de compte n'est requise pour utiliser l'Application.</p>
-
-    <h2>2. Données restant uniquement sur votre appareil</h2>
-    <p>Les données suivantes sont stockées localement et ne quittent jamais votre appareil, sauf si vous les exportez explicitement vous-même :</p>
-    <ul>
-      <li>Votre profil (nom, âge, sexe, taille, poids, niveau d'activité, objectif)</li>
-      <li>Votre journal alimentaire (repas, aliments enregistrés, quantités, dates)</li>
-      <li>Votre historique de poids et objectifs de poids</li>
-      <li>Votre journal d'activité (type, durée, calories brûlées)</li>
-      <li>Vos préférences d'application (langue, thème)</li>
-    </ul>
-    <p>Vous pouvez supprimer toutes les données stockées localement à tout moment depuis l'écran Paramètres (« Supprimer mes données »).</p>
-
-    <h2>3. Optionnel : Connexion avec Google</h2>
-    <p>Si vous choisissez de vous connecter avec Google, Google nous fournit vos informations de profil de base (nom, e-mail, photo de profil) afin d'associer vos données locales à votre identité Google. Ces données sont stockées localement sur votre appareil uniquement et ne sont transmises à aucun serveur que nous opérons. Vous pouvez révoquer cette association à tout moment depuis l'écran Paramètres.</p>
-    <p>Nous n'avons pas accès à votre mot de passe Google, à vos contacts, ni à aucune autre donnée de votre compte Google.</p>
-
-    <h2>4. Services tiers utilisés par l'Application</h2>
-    <p>L'Application interroge les services externes suivants pour fournir des fonctionnalités de recherche alimentaire et de reconnaissance d'image. Ces requêtes sont anonymes (aucune donnée personnelle n'est envoyée) et les réponses sont utilisées uniquement pour afficher les résultats :</p>
-    <ul>
-      <li>Open Food Facts — base de données alimentaires par code-barres (communautaire, données publiques)</li>
-      <li>CIQUAL / ANSES — base de composition alimentaire française</li>
-      <li>USDA FoodData Central — base de composition alimentaire américaine</li>
-      <li>Un service de reconnaissance d'aliments par image — utilisé uniquement lorsque vous activez la fonction caméra</li>
-    </ul>
-
-    <h2>5. Vie privée des enfants</h2>
-    <p>L'Application est destinée aux utilisateurs âgés de 18 ans et plus. Nous ne collectons sciemment aucune donnée auprès d'enfants.</p>
-
-    <h2>6. Vos droits</h2>
-    <p>Aucune donnée personnelle n'étant stockée sur nos serveurs, il n'y a aucune donnée à récupérer, modifier ou supprimer de notre côté. Toutes les données vivent sur votre appareil et vous en avez le contrôle total.</p>
-
-    <h2>7. Modifications de cette politique</h2>
-    <p>Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. La dernière version sera toujours disponible à cette URL.</p>
-
-    <h2>8. Contact</h2>
-    <p>Pour toute question concernant cette politique de confidentialité, contactez : <a href="mailto:jaguar2014@gmail.com">jaguar2014@gmail.com</a></p>
-
-    <a class="lang-switch" href="./index.html">🇬🇧 English version</a>
-
-    <footer>
-      <p>Kalyo — le suivi nutritionnel simplifié. © 2026.</p>
-    </footer>
-  </div>
+<div class="page">
+<header>
+<div>
+<h1>Politique de confidentialité</h1>
+<p class="subtitle">Ce document explique quelles données quittent votre appareil, quand, et pourquoi.</p>
+<p class="version">Version 1.0.0</p>
+</div>
+</header><h2>1. En résumé</h2>
+<p>Kalyo n&#x27;a ni système de comptes ni serveur. Votre journal est écrit dans le stockage de votre propre appareil et y reste. Rien n&#x27;est envoyé en arrière-plan, il n&#x27;y a aucun SDK de mesure d&#x27;audience dans l&#x27;application, aucun SDK de rapport de plantage, et aucune publicité. Les données ne quittent votre appareil que dans les situations précises énumérées à l&#x27;article 3, chacune déclenchée par une action de votre part, et chacune n&#x27;envoyant que le minimum nécessaire pour répondre à cette seule requête.</p>
+<h2>2. Ce qui est stocké sur votre appareil</h2>
+<p>L&#x27;application stocke localement les éléments suivants, dans le stockage privé qui lui est propre :</p>
+<ul>
+<li><strong>Profil</strong> — taille, poids, âge, sexe, niveau d&#x27;activité et l&#x27;objectif que</li>
+</ul>
+<p>  vous fixez. Ce sont les données d&#x27;entrée du calcul des objectifs caloriques   et nutritionnels ; l&#x27;application ne peut pas produire d&#x27;objectif sans elles.</p>
+<ul>
+<li><strong>Entrées du journal</strong> — les repas et aliments que vous avez enregistrés,</li>
+</ul>
+<p>  avec leurs quantités, unités, horodatages et les valeurs nutritionnelles   résolues pour eux, y compris les ingrédients de tout plat composé.</p>
+<ul>
+<li><strong>Entrées de poids</strong> et <strong>entrées d&#x27;activité</strong> — les valeurs et les dates</li>
+</ul>
+<p>  que vous avez enregistrées.</p>
+<ul>
+<li><strong>Objectifs et réglages</strong> — objectifs d&#x27;eau, de pas et de sommeil ;</li>
+</ul>
+<p>  préférences de notification ; thème ; langue de l&#x27;interface ; sources   alimentaires activées ; table nutritionnelle préférée ; activation du mode   avancé.</p>
+<ul>
+<li><strong>État de l&#x27;intégration et du consentement</strong> — où vous en êtes dans la</li>
+</ul>
+<p>  configuration, et l&#x27;enregistrement de votre acceptation de l&#x27;avis, des   Conditions d&#x27;utilisation et de la Politique de confidentialité : la version   de chaque document que vous avez acceptée, l&#x27;heure de l&#x27;acceptation, la   version de l&#x27;application, la langue de votre interface et votre   confirmation d&#x27;âge.</p>
+<ul>
+<li><strong>Identité du compte Google</strong>, si vous vous connectez — l&#x27;identifiant et</li>
+</ul>
+<p>  les informations de profil que Google renvoie pour le compte connecté,   conservés pour que l&#x27;application puisse indiquer à quel compte la   sauvegarde est rattachée.</p>
+<ul>
+<li><strong>La clé de chiffrement des sauvegardes</strong>, si vous utilisez la sauvegarde</li>
+</ul>
+<p>  Google Drive — une clé de 256 bits générée sur l&#x27;appareil et conservée dans   le stockage de clés sécurisé de la plateforme (le Trousseau iOS, ou les   préférences chiffrées adossées au Keystore Android).</p>
+<p>Les comptes de pas, lorsque vous activez le compteur de pas, sont lus depuis les capteurs de l&#x27;appareil via le système d&#x27;exploitation. Ils ne sont envoyés nulle part.</p>
+<p><strong>Une photo est également enregistrée dans la galerie de votre appareil.</strong> Lorsque vous prenez une photo de repas avec l&#x27;appareil photo, l&#x27;application enregistre cette photo dans votre galerie afin qu&#x27;elle reste sur votre téléphone après l&#x27;ajout du repas. Cela se produit automatiquement, sans confirmation distincte, et l&#x27;application demande l&#x27;autorisation d&#x27;accès à la galerie la première fois. Cette copie se trouve hors du stockage propre de l&#x27;application : c&#x27;est une photo ordinaire, d&#x27;autres applications peuvent la voir si elles ont l&#x27;autorisation de lire votre galerie, et elle n&#x27;est supprimée que si vous la supprimez vous-même. L&#x27;entrée du repas conserve dans l&#x27;application sa propre copie, dans le stockage privé de l&#x27;application, où tout ce qui précède s&#x27;applique.</p>
+<h2>3. Ce qui quitte votre appareil, et quand</h2>
+<p>Chaque élément ci-dessous ne se produit qu&#x27;en conséquence directe d&#x27;une action que vous effectuez. Aucun ne s&#x27;exécute en arrière-plan.</p>
+<h3>3.1 Reconnaissance des photos de repas — MiniMax</h3>
+<p>Lorsque vous photographiez un repas et demandez à Kalyo de le reconnaître, la ou les photos (jusqu&#x27;à six, redimensionnées à 1 024 pixels au maximum sur le côté le plus long) sont envoyées au point d&#x27;accès de l&#x27;API Anthropic-compatible de MiniMax, à l&#x27;adresse <code>api.minimax.io</code>, accompagnées d&#x27;une instruction textuelle demandant au modèle d&#x27;identifier les aliments et de la langue d&#x27;interface dans laquelle vous souhaitez les noms. La réponse du modèle est la liste d&#x27;aliments candidats que vous confirmez ou corrigez ensuite. Aucune donnée de profil, aucun historique de journal, aucun poids et aucune identité de compte n&#x27;est inclus dans la requête. Le même fournisseur et le même point d&#x27;accès sont utilisés lorsqu&#x27;un plat est décomposé en ses ingrédients, ce qui envoie le nom du plat sous forme de texte.</p>
+<h3>3.2 Transcription de la saisie vocale — Groq, et OpenAI en secours</h3>
+<p>Lorsque vous dictez une entrée, l&#x27;enregistrement audio est envoyé pour transcription. Il part d&#x27;abord vers le point d&#x27;accès de transcription de Groq, à l&#x27;adresse <code>api.groq.com</code>. Si cette requête échoue ou si aucune clé Groq n&#x27;est configurée, le même enregistrement est envoyé au point d&#x27;accès de transcription d&#x27;OpenAI, à l&#x27;adresse <code>api.openai.com</code>. Dans les deux cas, l&#x27;envoi contient le fichier audio et l&#x27;indication de langue, rien d&#x27;autre. Si aucun des deux services n&#x27;est disponible, l&#x27;application vous indique que la transcription est indisponible et vous invite à saisir l&#x27;entrée au clavier.</p>
+<p>Le texte renvoyé est ensuite envoyé au point d&#x27;accès compatible Anthropic de MiniMax, à l&#x27;adresse <code>api.minimax.io</code>, avec une instruction demandant les aliments et les quantités au format JSON strict. La requête contient la phrase dictée — ce que vous avez dit, sous forme de texte — et rien vous concernant : ni profil, ni historique du carnet, ni poids, ni identité de compte. MiniMax répond avec la liste des aliments et des quantités, que vous confirmez ou corrigez ensuite.</p>
+<h3>3.3 Apparier un plat reconnu à une table alimentaire — MiniMax</h3>
+<p>Quand l&#x27;application a un plat à placer — le nom qu&#x27;elle a reconnu sur une photo, ou la phrase qu&#x27;elle a extraite de votre voix — elle demande à MiniMax, à l&#x27;adresse <code>api.minimax.io</code>, quelle entrée parmi plusieurs candidates issues des tables alimentaires intégrées correspond au même aliment. La requête contient le nom du plat (en anglais et en français, quand les deux sont connus) et la liste courte des noms candidats issus des tables. Elle ne contient aucune donnée de profil, aucun historique du carnet, aucun poids et aucune identité de compte. MiniMax répond par l&#x27;indice du candidat correspondant, ou par rien si aucun candidat n&#x27;est le même aliment. Cette décision sert à éviter qu&#x27;une entrée erronée ne se glisse dans votre carnet ; ce qui est ajouté vous est toujours montré et demandé en confirmation.</p>
+<h3>3.4 Recherche d&#x27;aliments — USDA FoodData Central</h3>
+<p>Kalyo embarque un sous-ensemble de USDA FoodData Central dans l&#x27;application. Lorsqu&#x27;une recherche a besoin d&#x27;un aliment hors de ce sous-ensemble, le texte de recherche est envoyé comme requête à l&#x27;API USDA FoodData Central, à l&#x27;adresse <code>api.nal.usda.gov</code>. La requête contient les mots que vous avez saisis et rien qui vous concerne.</p>
+<h3>3.5 Lecture de codes-barres — Open Food Facts</h3>
+<p>Lorsque vous scannez un produit emballé, le numéro de code-barres est envoyé à l&#x27;API Open Food Facts, à l&#x27;adresse <code>world.openfoodfacts.org</code>, pour rechercher le produit. La requête contient le code-barres et rien d&#x27;autre. Les résultats sont mis en cache sur l&#x27;appareil afin qu&#x27;un même code-barres ne soit pas recherché deux fois.</p>
+<h3>3.6 Connexion Google</h3>
+<p>Si vous choisissez de vous connecter, l&#x27;authentification est assurée par la bibliothèque de connexion de Google. Google reçoit la demande de connexion et renvoie à l&#x27;application un jeton d&#x27;identité et des informations de profil de base. Votre journal ne fait pas partie de cet échange.</p>
+<h3>3.7 Sauvegarde Google Drive</h3>
+<p>Si vous activez la sauvegarde, Kalyo écrit un fichier dans un dossier nommé <code>Kalyo</code> de votre propre Google Drive. Avant tout envoi, vos données sont sérialisées en JSON, compressées en gzip et chiffrées sur l&#x27;appareil en AES-256-GCM. L&#x27;envoi ne contient que les octets chiffrés, le vecteur d&#x27;initialisation, les identifiants d&#x27;algorithme et de format, un identifiant de clé aléatoire et un horodatage. Google stocke donc un fichier qu&#x27;il ne peut pas lire. L&#x27;application ne demande que la portée OAuth <code>drive.file</code>, qui lui donne accès aux fichiers qu&#x27;elle a créés elle-même et aucun accès au reste de votre Drive.</p>
+<p>La clé de chiffrement ne quitte jamais l&#x27;appareil et il n&#x27;en existe aucune copie séquestrée. Cela a une conséquence qu&#x27;il faut anticiper : une sauvegarde ne peut être déchiffrée que sur l&#x27;appareil qui l&#x27;a créée, de sorte que réinstaller l&#x27;application ou changer de téléphone rend les sauvegardes existantes illisibles.</p>
+<h3>3.8 Recherche d&#x27;aliments — Nutritionix</h3>
+<p>Kalyo peut également interroger Nutritionix, la base de données alimentaires hébergée à <code>trackapi.nutritionix.com</code>. Lorsque cette source est activée, les mots que vous avez tapés sont envoyés à ce point de terminaison comme requête de recherche, avec un identifiant d&#x27;application et une clé d&#x27;API dans les en-têtes. La requête ne contient rien vous concernant : ni profil, ni historique du carnet, ni poids, ni identité de compte. Nutritionix reçoit le texte de la recherche et répond avec des noms d&#x27;aliments et des informations nutritionnelles.</p>
+<p>Ce fournisseur <strong>n&#x27;est pas activé dans la version que vous utilisez</strong> — aucun identifiant Nutritionix n&#x27;est configuré, l&#x27;application ne le contacte donc jamais. Il est décrit ici parce que le code peut l&#x27;appeler, et que cette politique décrit ce que l&#x27;application peut faire, et pas seulement ce qui se trouve activé aujourd&#x27;hui.</p>
+<h3>3.9 Autres sources</h3>
+<p>Les tables de composition alimentaire ANSES-CIQUAL, suisse (OSAV), australienne (AFCD), libanaise et bahreïnienne sont embarquées dans l&#x27;application. Y effectuer une recherche n&#x27;implique aucune requête réseau. Les coefficients MET utilisés pour estimer les calories brûlées pendant une activité font de même partie de l&#x27;application.</p>
+<h2>4. Ce que Kalyo ne fait pas</h2>
+<p>Pour être explicite sur les absences, car elles font autant partie de cette politique que les flux ci-dessus :</p>
+<ul>
+<li>Il n&#x27;y a <strong>aucun SDK de mesure d&#x27;audience ni de télémétrie produit</strong> dans</li>
+</ul>
+<p>  l&#x27;application. Aucune vue d&#x27;écran, aucun appui, aucune session et aucun   événement d&#x27;usage n&#x27;est collecté ni transmis.</p>
+<ul>
+<li>Il n&#x27;y a <strong>aucun SDK de rapport de plantage</strong>. L&#x27;application ne contient ni</li>
+</ul>
+<p>  Sentry, ni Firebase Crashlytics, ni Bugsnag, ni aucun équivalent, et les   rapports de plantage ne nous sont pas envoyés. Les messages de diagnostic   que l&#x27;application écrit le sont uniquement dans le journal de l&#x27;appareil.</p>
+<ul>
+<li>Il n&#x27;y a <strong>aucune publicité</strong> et aucun identifiant publicitaire n&#x27;est lu.</li>
+<li>Il n&#x27;y a <strong>aucun suivi entre applications ou sites web</strong>, et aucune donnée</li>
+</ul>
+<p>  n&#x27;est vendue, louée ni partagée avec des courtiers en données.</p>
+<ul>
+<li>Il n&#x27;y a <strong>aucun serveur Kalyo</strong>, donc il n&#x27;existe aucun profil côté</li>
+</ul>
+<p>  serveur vous concernant à demander, rectifier ou supprimer.</p>
+<h2>5. Base légale et finalité</h2>
+<p>Lorsque le Règlement général sur la protection des données de l&#x27;Union européenne ou un régime équivalent s&#x27;applique, les traitements décrits à l&#x27;article 3 reposent sur votre consentement, donné en acceptant la présente politique et en choisissant d&#x27;utiliser la fonction concernée, ainsi que sur la nécessité du traitement pour fournir la fonction demandée. Chaque flux sert une seule finalité : reconnaître une photo, transcrire un enregistrement, résoudre un aliment ou stocker une sauvegarde que vous avez demandée. Aucun flux n&#x27;est utilisé à des fins de profilage, de publicité ni d&#x27;aucune finalité secondaire.</p>
+<h2>6. Conservation</h2>
+<p>Les données présentes sur votre appareil sont conservées jusqu&#x27;à ce que vous les supprimiez — entrées individuelles du journal, ou tout d&#x27;un coup via l&#x27;option de suppression dans les réglages. La désinstallation de l&#x27;application supprime son stockage local. Les sauvegardes que vous avez écrites dans Google Drive y restent jusqu&#x27;à ce que vous les y supprimiez ; Kalyo conserve un fichier par jour plus un fichier <code>latest</code>, et une sauvegarde du même jour remplace la précédente au lieu d&#x27;accumuler des copies.</p>
+<p>Nous ne conservons rien, parce que nous ne recevons rien. Les données envoyées aux services tiers de l&#x27;article 3 sont conservées selon les politiques propres à ces fournisseurs, que nous ne contrôlons pas : Google, MiniMax, Groq, OpenAI, USDA et Open Food Facts publient chacun leurs propres conditions.</p>
+<h2>7. Vos droits</h2>
+<p>Parce que vos données sont sur votre appareil et non sur un serveur, les droits qui exigeraient normalement une demande auprès de nous sont des actions que vous pouvez effectuer directement dans l&#x27;application. Vous pouvez voir tout ce qui est stocké à votre sujet en parcourant le journal et le profil. Vous pouvez rectifier n&#x27;importe quelle entrée en la modifiant. Vous pouvez exporter vos données, et vous pouvez les supprimer toutes. La suppression est immédiate et locale, et elle est irréversible — exportez d&#x27;abord si vous voulez une copie.</p>
+<p>Si vous estimez qu&#x27;il a été porté atteinte à vos droits, vous pouvez introduire une réclamation auprès de votre autorité nationale de protection des données.</p>
+<h2>8. Enfants</h2>
+<p>Kalyo est destinée aux adultes. Vous devez confirmer avoir 18 ans ou plus avant d&#x27;accéder au journal. Nous ne traitons pas sciemment les données de personnes de moins de 18 ans, et l&#x27;application ne comporte aucune fonction destinée aux enfants.</p>
+<h2>9. Modifications de cette politique</h2>
+<p>Si cette politique change de manière substantielle, son numéro de version est élevé et l&#x27;application vous demande de lire et d&#x27;accepter la nouvelle version avant de continuer à l&#x27;utiliser. La version que vous avez acceptée, et la date à laquelle vous l&#x27;avez acceptée, sont enregistrées sur votre appareil et affichées dans la section légale de l&#x27;application.</p>
+<h2>10. Langue faisant foi</h2>
+<p>Cette politique est publiée en plusieurs langues par commodité. En cas de divergence entre les traductions, la version anglaise prévaut.</p><p class="langbar"><a href="index.html">Read in English</a></p>
+<footer>
+  <p>Kalyo — a calorie and food tracker. This page is the app's privacy
+  policy; the same text is shown inside the app.</p>
+  fr
+</footer>
+</div>
 </body>
 </html>
